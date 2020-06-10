@@ -1,0 +1,9 @@
+.cardContent:hover {
+    visibility: hidden;
+  }
+  
+.cardContent  {
+    visibility: visible;
+  }
+
+  /* @import '~bootstrap/dist/css/bootstrap.css'; */
