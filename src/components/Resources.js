@@ -17,8 +17,19 @@ export default class Resources extends React.Component {
    
         return (
             <div>
+                <Card style={{ width:275, height:275, margin:10, backgroundColor:'#FFF2EB' }}>
+  <Card.Body>
+    <Card.Title>{this.props.title}</Card.Title>
+    <Card.Subtitle className="mb-2 text-muted">{this.props.id}</Card.Subtitle>
+    <Card.Text>
+      {this.props.info}
+    </Card.Text>
+    <Button variant={this.props.var} onClick={this.onClick}>View</Button>
+
+  </Card.Body>
+</Card>
     
-            <Card style={{width:250, height: 250, margin:10}}className="bg-light text-white">
+            {/* <Card style={{width:250, height: 250, margin:10}}className="bg-light text-white">
             <Card.Img src= {this.props.imgsrc} alt="Card image" />
             <Card.ImgOverlay>
                 <Card.Title style={{color:this.props.fontcolor}}>{this.props.title}</Card.Title>
@@ -28,7 +39,7 @@ export default class Resources extends React.Component {
                     </Card.Text>             
                     <Button variant={this.props.var} onClick={this.onClick}>View</Button>
             </Card.ImgOverlay>
-        </Card>
+        </Card> */}
         </div>
   
         );

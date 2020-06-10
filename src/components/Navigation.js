@@ -5,7 +5,23 @@ export default class Navigation extends React.Component {
     render() {
         return (
             <div>
-            <Navbar bg="dark" variant="dark" >
+              <Nav  activeKey="/home">
+    <Nav.Item>
+      <Nav.Link style={{color:'#6D6875'}} href="#home" >Home</Nav.Link>
+    </Nav.Item>
+    <Nav.Item>
+      <Nav.Link  style={{color:'#6D6875'}}href="#resources">Resources</Nav.Link>
+    </Nav.Item>
+    <Nav.Item>
+      <Nav.Link style={{color:'#6D6875'}} href="#submit">Submisson</Nav.Link>
+    </Nav.Item>
+
+   
+   
+  </Nav>
+ 
+  
+            {/* <Navbar bg="dark" variant="dark" >
             <Navbar.Brand href="#home">Collective</Navbar.Brand>
             <Nav className="mr-auto">
               <Nav.Link href="#home">Home</Nav.Link>
@@ -16,9 +32,9 @@ export default class Navigation extends React.Component {
               <FormControl type="text" placeholder="Search" className="mr-sm-2" />
               <Button variant="outline-info">Search</Button>
             </Form> */}
-          </Navbar>
+          {/* </Navbar> */}
        
-         
+
 
           </div>
         );
