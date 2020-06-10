@@ -7,6 +7,7 @@ import Navigation from './components/Navigation';
 import {Container, Row, Col} from 'react-bootstrap'
 import Login from './components/Login.js'
 import Error from './components/Error.js'
+import Connect from './components/Connect.js'
 import Landing from './components/Landing.js'
 
 import RenderResource from './components/RenderResource';
@@ -27,6 +28,7 @@ export default class App extends React.Component {
              <Route path="/home" component={Landing}/>
              <Route path="/home/#resources" component={Landing}/>
              <Route path="/home/#submit" component={Landing}/>
+             <Route path='/connect' component={Connect}/>
              <Route path="/" component={Landing} exact/>
 
             <Route component={Error}/>

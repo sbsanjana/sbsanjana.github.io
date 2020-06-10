@@ -42,23 +42,17 @@ export default class RenderResource extends React.Component {
                 info='A list of tech-focused summer internships, listed with deadlines!'
                 title='Internships'
                 hlink='github.com/elaine-zheng/summer2020internships'
-                var='secondary'
-                fontcolor='black'
                 id='Career'
-                imgsrc={Job}
                 />
           
                 <Resources 
                 info='A national program for college women interested in careers in tech. Mentorship & Job opportunities!'
                 title='Rewriting the Code Fellowship'
                 hlink='www.rewritingthecode.org/fellowship/'
-                var='secondary'
                 id='Career'
-                fontcolor= 'white'
-                imgsrc={rwc}
-                style={{margin:10}}
                 />
           
+
               </Row>
             </Col>
           </Container>
