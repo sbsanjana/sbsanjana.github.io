@@ -1,5 +1,5 @@
 import React from 'react';
-import {Form, Button, Container} from 'react-bootstrap'
+import {Form, Button, Container, Alert} from 'react-bootstrap'
 import Response from '../Response.json'
 
 export default class Submit extends React.Component {
@@ -7,6 +7,18 @@ export default class Submit extends React.Component {
 
   constructor(props) {
     super(props)
+    this.state = {}
+    this.submit.bind(this);
+  }
+  submit = (event) => {
+    this.setState(
+      {
+      'title': event.target.value,
+      
+      }
+    )
+    console.log(this.state)
+    window.alert("Submitted!")
   }
 
     render() {
@@ -16,7 +28,7 @@ export default class Submit extends React.Component {
             <Form>
   <Form.Group controlId="exampleForm.ControlInput1">
     <Form.Label>Name of Resource</Form.Label>
-    <Form.Control type="title" placeholder="Name" />
+    <Form.Control type="title" placeholder="Name" value={this.state.title}/>
   </Form.Group>
 
   <Form.Group controlId="exampleForm.ControlInput1">
@@ -40,7 +52,7 @@ export default class Submit extends React.Component {
     <Form.Label>Description</Form.Label>
     <Form.Control as="textarea" rows="3" placeholder="Text here..." />
   </Form.Group>
-  <Button variant='secondary' onClick={this.handleSubmit}> Submit </Button>
+  <Button variant='secondary' onClick={this.submit}> Submit </Button>
 </Form>
 
 </Container>

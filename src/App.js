@@ -25,7 +25,7 @@ export default class App extends React.Component {
       <h1 style={{textAlign:'center'}}>Welcome to Collective.</h1>
       <h3 style={{textAlign:'center'}}>A place to find resources and opportunites, especially as a woman, in CS. </h3>
       <br />
-      <h2 style={{fontStyle:'italic'}}>Resources</h2>
+      <h2 style={{fontStyle:'italic'}} id='resources'>Resources</h2>
       <Container>
   <Col>
     <Row>
@@ -42,7 +42,7 @@ export default class App extends React.Component {
       <Resources 
       info='A national program for college women interested in careers in tech. Mentorship & Job opportunities!'
       title='Rewriting the Code Fellowship'
-      hlink='https://rewritingthecode.org/fellowship/'
+      hlink='www.rewritingthecode.org/fellowship/'
       var='secondary'
       id='internship'
       fontcolor= 'white'
@@ -54,7 +54,7 @@ export default class App extends React.Component {
   </Col>
 </Container>
 <br></br>
-<h2 style={{fontStyle:'italic'}}>Submit More!</h2>
+<h2 style={{fontStyle:'italic'}} id='submit'>Submit More!</h2>
 <Submit />
 
 
