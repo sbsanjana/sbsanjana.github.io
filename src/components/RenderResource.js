@@ -23,6 +23,8 @@ export default class RenderResource extends React.Component {
         return (
             <div>
                 <Container>
+                         <p style={{fontStyle:'italic', fontSize:50, fontWeight:'lighter', color:'#DA6C70', textAlign:'center'}} id='resources'>Resources</p>
+
                 <Row className="justify-content-md-center">
                     
                    

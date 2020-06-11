@@ -10,12 +10,12 @@ export default class Navigation extends React.Component {
       <Nav.Link style={{color:'#6D6875'}} href="/home" >Home</Nav.Link>
     </Nav.Item>
     <Nav.Item>
-      <Nav.Link  style={{color:'#6D6875'}}href="/home#resources">Resources</Nav.Link>
+      <Nav.Link  style={{color:'#6D6875'}}href="/resources">Resources</Nav.Link>
     </Nav.Item>
-    <Nav.Item>
+    {/* <Nav.Item>
       <Nav.Link style={{color:'#6D6875'}} href="/home#submit">Submisson</Nav.Link>
       
-    </Nav.Item>
+    </Nav.Item> */}
     <Nav.Item >
       <Nav.Link style={{color:'#6D6875'}} href="/connect">Connect</Nav.Link>
     </Nav.Item>

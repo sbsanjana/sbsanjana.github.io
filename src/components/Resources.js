@@ -24,7 +24,7 @@ export default class Resources extends React.Component {
     <Card.Text>
       {this.props.info}
     </Card.Text>
-    <Button variant={this.props.var} onClick={this.onClick}>View</Button>
+    <Button variant='secondary' onClick={this.onClick}>View</Button>
 
   </Card.Body>
 </Card>
