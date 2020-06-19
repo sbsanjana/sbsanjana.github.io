@@ -19,6 +19,8 @@ export default class RenderResource extends React.Component {
         
     }
 
+   
+
     render() {
         return (
             <div>
