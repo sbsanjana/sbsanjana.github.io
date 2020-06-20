@@ -13,6 +13,7 @@ export default class Connect extends React.Component {
         fetch(url) 
             .then(resp => resp.json())
             .then(data => {
+                data = data.reverse();
                 let posts=data.map((post, index) => {
                     return (
                         <Container>
