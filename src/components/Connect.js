@@ -5,7 +5,7 @@ import ConnectForm from './ConnectForm.js'
 export default class Connect extends React.Component {
     constructor(props) {
         super(props)
-        this.state={}
+        this.state={selected:'all'}
     }
 
     componentDidMount() {
@@ -16,39 +16,25 @@ export default class Connect extends React.Component {
                 data = data.reverse();
                 let posts=data.map((post, index) => {
                     return (
-                        <Container>
+                    <Container>
                       <Col ms={4}> 
                           <Row xs={1}> 
-                            
-                  
                             <Card style={{ width:300, height:275, margin:10, backgroundColor:'#FFF2EB' }}>
                             <Card.Header as="h5">{post.user}</Card.Header>
-
                             <Card.Body>
-
                                 <Card.Title>{post.title}</Card.Title>
-                                
                                 <Card.Subtitle className="mb-2 text-muted">{post.tags}</Card.Subtitle>
-
                                 <Card.Text>
                                 {post.text}
                                 </Card.Text>
-                               
-
                             </Card.Body>
-                            
-                            
-                          
-
                             <Card.Footer className="text-muted">{post.date}</Card.Footer>
-                        
-                                   
-                                         </Card>
-                          
-                            </Row>
-                            </Col>
-                            
-                        </Container>
+                        </Card>
+                    
+                    </Row>
+                    </Col>
+                    
+                </Container>
                       
                    
                     )

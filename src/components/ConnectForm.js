@@ -54,13 +54,6 @@ export default class ConnectForm extends React.Component {
             'tag': this.state.tag
 
         };
-        // let url ='http://localhost:3001/posts'
-
-    // axios.post(url, { userObject })
-    //   .then(res => {
-    //     console.log(res);
-    //     console.log(res.data);
-    //   })
 
     var d = new Date();
 
@@ -113,17 +106,17 @@ export default class ConnectForm extends React.Component {
 
       <Form>
             <Form.Group controlId="formBasicEmail">
-                <Form.Label>Title</Form.Label> <br />
+                <Form.Label style={{marginLeft:-700,fontSize:20, fontStyle:'italic', fontWeight:'bolder'}}>Title</Form.Label> <br />
                 <input type="email" placeholder="Enter Title" style={{width:750, height: 50, borderRadius:5, border:'none'}} onChange={this.handleTitle} />
                 
             </Form.Group>
 
             <Form.Group controlId="formBasicPassword">
-                <Form.Label>Text</Form.Label> <br />
+                <Form.Label style={{marginLeft:-700,fontSize:20, fontStyle:'italic', fontWeight:'bolder'}}>Text</Form.Label> <br />
                 <input type="text area" style={{width:750, height:75, border:'none', borderRadius:5}}placeholder="Enter Text" onChange={this.handleText} />
             </Form.Group>
             <Form.Group controlId="">
-            <Form.Label>Tag</Form.Label>
+            <Form.Label style={{marginLeft:-700, fontSize:20, fontStyle:'italic', fontWeight:'bolder'}}>Tag</Form.Label>
             
             <Form.Control as="select" style={{width:750, marginLeft:125}} onChange={this.handleTag}>
                 <option>Select </option>
