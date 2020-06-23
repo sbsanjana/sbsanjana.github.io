@@ -1,0 +1,18 @@
+[
+    {
+        "id": "123",
+        "title": "Add me on LinkedIn!",
+        "tags": "Career",
+        "text": "www.linkedin.com/sanjanabadhya",
+        "date": "6-18-20",
+        "user": "Sanjana Badhya"
+    },
+    {
+        "id": "124",
+        "title": "[Company] Interview Experience",
+        "tags": "Career",
+        "text": "I thought it was fairly easy. 2 rounds techincal phone interview. Then they flew me out to [city] for an on-site! Reach out to me for more info!",
+        "date": "6-18-20",
+        "user": "User Example"
+    }
+]
