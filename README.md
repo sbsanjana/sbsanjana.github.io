@@ -1,2 +1,2 @@
 # collective
-Collective is a space designed to help those in the tech field, especially those who are traditionally underrepresented, network, find resources, and share skills. 
+To run this app, clone or download the repository. Then, ensuring you have node installed, run 'npm start' in both the client and api folders simultaneouly.
